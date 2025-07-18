@@ -33,3 +33,15 @@
 .box:nth-child(3n + 3) {
   grid-column: 3;
 }
+
+.items-table {
+  color: black;
+  background-color: white;
+  border-collapse: collapse;
+}
+
+.items-table th,
+.items-table td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
