@@ -24,7 +24,7 @@ export default function ItemsPage({ onReturn }) {
   return (
     <Flex direction="column" alignItems="center" gap="1rem" padding="2rem">
       <Heading level={2}>Items</Heading>
-      <table>
+      <table className="items-table">
         <thead>
           <tr>
             {items[0] &&
