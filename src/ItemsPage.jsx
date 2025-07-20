@@ -23,14 +23,14 @@ export default function ItemsPage({ onReturn }) {
 
   return (
     <Flex direction="column" alignItems="center" gap="1rem" padding="2rem">
-      <Heading level={2}>List of Items</Heading>
+      <Heading level={2}>Items</Heading>
       <table className="items-table">
         <thead>
           <tr>
             {items[0] &&
               Object.keys(items[0]).map((key) => (
                 <th key={key}>
-                  {key.replace(/\w\S*/g, (w) => w.charAt(0).toUpperCase() + w.slice(1))}
+                  {key.replace(/\w\S*/g, (w) => w.charAt(0).toLowerCase() + w.slice(1))}
                 </th>
               ))}
           </tr>
